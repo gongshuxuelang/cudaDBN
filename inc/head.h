@@ -1,7 +1,6 @@
 #ifndef __HEAD_H__
 #define __HEAD_H__
 
-
 #include <iostream>
 #include <thread>
 #include <fstream>
@@ -13,6 +12,7 @@
 
 #include <cuda_runtime.h> //cuda头文件
 
+#include <boost/lexical_cast.hpp>
 #include <boost/atomic.hpp>//boost原子操作
 #define  BOOST_THREAD_VERSION 5 //使用thread第五版，一共有v2,v3,v4,v5,四个版本
 #include <boost/thread.hpp>
@@ -24,6 +24,7 @@
 
 #include "Matrix.h" //矩阵类
 #include "rwDate.h" //读写文件类
+#include "rwDate_dec.h"
 //#include "DWT.h"
 
 //字母说明，dec为分解，signal为信号，Len为长度，filter为滤波器，
